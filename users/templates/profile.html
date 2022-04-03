@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Профиль {{ object.first_name }} {{ object.last_name }}
+{% endblock %}
+
+
+{% block content %}
+
+<h1>Имя: {{ object.first_name }}</h1>
+<h1>Фамилия: {{ object.last_name }}</h1>
+<h1>Мой инвайт-код: {{ object.code_invite }}</h1>
+{% if object.another_invite %}
+<h1>Инвайт-код: {{ object.another_invite }}</h1>
+{% else %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="sumbit" class="btn btn-primary btn-block">Активировать</button>
+</form>
+{% endif %}
+
+{% endblock %}

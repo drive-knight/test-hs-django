@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block content %}
+
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="sumbit" class="btn btn-primary btn-block">Отправить</button>
+</form>
+
+
+{% endblock %}

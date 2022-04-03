@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Создание профиля
+{% endblock %}
+
+{% block content %}
+
+<h1 class="h3 mb-4 fw-normal" align="center">Создание профиля</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="sumbit" class="btn btn-primary btn-block">Создать</button>
+</form>
+
+{% endblock %}

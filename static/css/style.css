@@ -1,0 +1,34 @@
+body
+{
+  background:#e6e6ff;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+#style
+{
+  border-radius:0px;
+  background:#fff;
+  padding:10px;
+  font-size:17px;
+}
+
+#link a
+{
+  color:#01325d;
+  margin:0 20px 0 10px;
+  letter-spacing:1.5px;
+}
+
+#first-link
+{
+  padding-right:6px;
+  border-right:solid 1px #ccc;
+}
+
+#button-link ,#toogle-button
+{
+  border-width: 1px;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 2px;
+  line-height: 17px;
+}

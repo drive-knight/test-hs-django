@@ -1,4 +1,4 @@
-# api/
+# api paths
 ## api/
 **Allowed Methods** : GET  
 

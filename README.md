@@ -1,10 +1,10 @@
-api/
-api/
+# api/
+## api/
 Allowed Methods : GET
 Access Level : Public
 обзор имеющихся api представлений  
 
-api/my-invites/
+## api/my-invites/
 Allowed Methods : GET
 Access Level : Private(Auth)
 возвращает список пользователей(номеров
